@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.app{
+  display: grid;
+  min-height: 100vh;
+  background: url('./assets/images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(204, 44, 44); */
+ 
+}
+
+.weather{
+  /* display: flex; */
+  place-self: center;
+  /* justify-content: center; */
+  padding: 40px;
+  border-radius: 11px;
+  background-image: linear-gradient(48deg,#5d05ba,#059b2bcb);
+  /* background: rgba(202, 223, 69, 0.256); */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  /* border-radius: 10px; */
+}
+
+.search input{
+  border: none;
+  height: 50px;
+  outline: none;
+  border-radius: 38px;
+  padding-left: 25px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-style: bold !important;
+  /* font-weight: 100; */
+  background: #f4f8f6;
+  /* text-align: center; */
+}
+.search img{
+  width: 50px;
+  padding: 15px;
+  border-radius: 50%;
+  background: #e8eceb;
+  cursor: pointer;
+}
+.search img:hover{
+  transition: 0.2s all ease-in;
+  transform: rotate(360deg);
+}
+.icon{
+  width: 150px;
+  margin: 30px 0;
+
+}
+.temp{
+  color: whitesmoke;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 2;
+  font-family: 'Times New Roman', Times, serif;
+}
+.location{
+  font-size: 30px;
+  color: white;
+
+}
+.weather-data{
+  width: 100%;
+  display: flex;
+  color: white;
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+}
+.colom{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 21px;
+
+  margin-top: 18px;
+}
+.colom span{
+  display: block;
+  font-size: 17px;
+
+}
+.colom img{
+  /* display: flex; */
+width: 30px;
+margin-top: 8px;
+}
+.temp{
+  font-size: 45px;
+}
+.weather-name{
+  /* width: 50px; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* padding: 10px; */
+  /* margin-top: 20px 0; */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 26px;
+}
+.city{
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* text-align: center; */
+  margin-top: 8px;
+  color: whitesmoke;
+}
+
+@media screen and (width <=400px) {
+  .weather{
+    flex-direction: column;
+    width: 100%;
+    /* width: 50%; */
+  }
+}
+
+@media screen and (width<393px) {
+  .weather{
+    flex-direction: column;
+    width: 100%;
+
+  }
+  .search{
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (width<315px) {
+ 
+  .search{
+    flex-direction: column;
+    width: 100%;
+  }
+  .search input{
+    width: 100%;
+  }
+}
